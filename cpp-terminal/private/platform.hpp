@@ -20,7 +20,7 @@
 #include <minwindef.h>
 #undef NOMINMAX
 #else
-class termios;
+#include <termios.h>
 #include <memory>
 #endif
 
