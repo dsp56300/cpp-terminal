@@ -17,7 +17,12 @@
 #define _ARM_
 #endif
 #endif
+#ifdef _M_ARM64
+#include <Windows.h>
+#undef ERROR
+#else
 #include <minwindef.h>
+#endif
 #undef NOMINMAX
 #else
 #include <termios.h>
